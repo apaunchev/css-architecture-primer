@@ -1,0 +1,10 @@
+body {
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-3);
+}
+
+a {
+  color: currentColor;
+  text-decoration-color: var(--cyan-8);
+  text-decoration-thickness: var(--size-1);
+}

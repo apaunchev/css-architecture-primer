@@ -1,0 +1,4 @@
+.box {
+  padding: var(--size-3);
+  border: 1px solid var(--gray-6);
+}
