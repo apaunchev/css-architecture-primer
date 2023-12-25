@@ -44,6 +44,6 @@ module.exports = {
       directory: path.join(__dirname, "static"),
     },
     compress: true,
-    port: 3000,
+    port: process.env.PORT || 3000,
   },
 };
