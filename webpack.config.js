@@ -17,16 +17,25 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
+            options: {
+              importLoaders: 1,
+              modules: true,
+            },
           },
           {
             loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: ["postcss-partial-import", "postcss-custom-media"],
-              },
-            },
           },
         ],
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
