@@ -13,6 +13,7 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
+        include: /.module.css/,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -22,10 +23,13 @@ module.exports = {
               modules: true,
             },
           },
-          {
-            loader: "postcss-loader",
-          },
+          "postcss-loader",
         ],
+      },
+      {
+        test: /\.css$/,
+        exclude: [/node_modules/, /.module.css/],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         test: /\.jsx?$/,
