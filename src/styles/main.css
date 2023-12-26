@@ -1,13 +1,12 @@
-@import "open-props/normalize";
-@import "open-props/sizes";
-@import "open-props/fonts";
-@import "open-props/colors";
-@import "open-props/media";
+@import "modern-normalize.css";
 
-@import "reset.css";
+@import "props/fonts.css";
+@import "props/colors.css";
+@import "props/sizes.css";
+@import "props/media.css";
+
 @import "globals.css";
 
-@import "layouts/sidebar.css";
-
-@import "utilities/wrapper.css";
 @import "utilities/flow.css";
+@import "utilities/space-between.css";
+@import "utilities/wrapper.css";

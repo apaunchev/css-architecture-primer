@@ -1,17 +1,8 @@
 import React from "react";
 import { Header } from "./Header/Header.jsx";
-
-function Logo() {
-  return <h1>Logo</h1>;
-}
-
-function Search() {
-  return <input type="text" placeholder="Search" />;
-}
-
-function Cart() {
-  return <div>Cart</div>;
-}
+import { Logo } from "./Logo/Logo.jsx";
+import { Search } from "./Search/Search.jsx";
+import { Cart } from "./Cart/Cart.jsx";
 
 export function App() {
   return (

@@ -1,6 +1,6 @@
+const postcssImport = require("postcss-import");
 const postcssPresetEnv = require("postcss-preset-env");
-const postcssCustomMedia = require("postcss-custom-media");
 
 module.exports = {
-  plugins: [postcssPresetEnv, postcssCustomMedia],
+  plugins: [postcssImport(), postcssPresetEnv()],
 };

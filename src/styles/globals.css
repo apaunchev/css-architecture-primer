@@ -1,10 +1,42 @@
-body {
-  font-family: var(--font-sans);
-  line-height: var(--font-lineheight-3);
+html {
+  --brand: var(--cyan-7);
+
+  --link: var(--cyan-6);
+  --link-hover: var(--cyan-9);
+
+  --text-1: var(--gray-12);
+  --text-2: var(--gray-7);
+
+  --border-1: var(--gray-3);
+  --border-2: var(--gray-5);
+  --border-3: var(--gray-7);
+
+  accent-color: var(--brand);
+  caret-color: var(--brand);
+  color: var(--text-1);
 }
 
-a {
-  color: currentColor;
-  text-decoration-color: var(--cyan-8);
-  text-decoration-thickness: var(--size-1);
+a[href] {
+  color: var(--brand);
+
+  &:hover {
+    color: var(--link-hover);
+  }
+}
+
+:focus-visible {
+  outline-color: var(--brand);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }

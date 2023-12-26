@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: var(--size-sm);
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+}
