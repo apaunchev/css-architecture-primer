@@ -16,7 +16,7 @@ html {
   color: var(--text-1);
 }
 
-a[href] {
+a {
   color: var(--brand);
 
   &:hover {

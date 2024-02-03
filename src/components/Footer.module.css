@@ -1,0 +1,4 @@
+.wrapper {
+  padding-block: var(--size-3);
+  border-block-start: 1px solid var(--border-1);
+}

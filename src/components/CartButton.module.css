@@ -1,0 +1,32 @@
+.button[href] {
+  position: relative;
+  color: var(--gray-8);
+}
+
+.counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -40%);
+  font-size: var(--font-size-0);
+  background-color: var(--brand);
+  color: white;
+  width: var(--size-5);
+  height: var(--size-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-round);
+  border: var(--border-size-2) solid white;
+  font-weight: var(--font-weight-9);
+  animation: fadeIn 500ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
