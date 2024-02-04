@@ -12,7 +12,10 @@ export function ProductList({ products, onAddToCartClick }) {
             <figcaption>
               <span className="product-name">{product.name}</span>
             </figcaption>
-            <button onClick={() => onAddToCartClick(product)}>
+            <button
+              className="rounded-2"
+              onClick={() => onAddToCartClick(product)}
+            >
               Add to cart (${product.price})
             </button>
           </figure>
