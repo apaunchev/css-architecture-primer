@@ -10,7 +10,7 @@ export function ProductList({ products, onAddToCartClick }) {
           <figure>
             <img alt={product.name} src={product.imageSrc} />
             <figcaption>
-              <span className="product-name">{product.name}</span>
+              <span className={styles.productName}>{product.name}</span>
             </figcaption>
             <button
               className="rounded-2"
